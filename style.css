@@ -1,0 +1,12 @@
+
+@media screen and (max-width: 550px) {
+    .col-none {display: none;}}
+
+
+.table{
+    font-size: 13px;
+}
+
+.go-w-button{
+   max-width: 30px;
+}
