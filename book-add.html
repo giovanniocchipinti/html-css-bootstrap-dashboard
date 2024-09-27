@@ -50,25 +50,67 @@
 
         <!-- CORPO DELLA PAGINA -->
 
-        <div class="  d-flex mb-3 container gap-1">
-            <div>
-                <label for="author-name" class="form-label">Nome Autore</label>
-                <input type="text" class="form-control" id="author-name" placeholder="Inserisci il nome dell'autore">
-            </div>
+        <div class="container">
 
-            <div>
-                <label for="authore-surname" class="form-label">Another label</label>
-                <input type="text" class="form-control" id="authore-surname" placeholder="Inserisci il cognome dell'autore">
-            </div>
+            <form  class="row">
+
+                <div class="mb-3 gap-1 d-flex">
+                    <div class="w-50">
+                        <label for="author-name" class="form-label">Nome Autore</label>
+                        <input type="text" class="form-control" id="author-name" placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="w-50">
+                        <label for="authore-surname" class="form-label">Cognome Autore</label>
+                        <input type="text" class="form-control" id="authore-surname" placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                </div>
+                    
+                <div>
+                    <label for="book-tit" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="book-tit" placeholder="Inserisci il titolo del libro">                        <div class="form-text pb-3">Titolo versione italiana
+                </div>
+
+                <div class="d-flex flex-wrap ">
+
+                    <div class="mb-3 col-12 col-md-4">
+
+                        <label for="categories" class="form-label">Genere</label>
+                        <select class="form-select" id="categories">
+                            <option selected="gender">Scegli il genere</option>
+                            <option value="adv">Avventura</option>                           
+                            <option value="fum">Fumetti</option>
+                            <option value="fs">Fantascienza</option>
+                        </select>
+
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4 " >
+                        <label for="launch-year" class="form-label">Anno di pubblicazione</label>
+                        <input type="number" class="form-control" id="launch-year" placeholder="Inscerisci l'anno">
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4 ">
+                        <label for="isbn-code" class="form-label">ISBN#</label>
+                        <input type="number" class="form-control" id="isbn-code" placeholder="Inserisci il codice ISBN#">
+                    </div>
+                    
+                </div>
+
+
+                <hr>
+
+                    
+
+                
+
+            </form>
+
+       
+
         </div>
 
-        <div class="mb-3 container gap-1">
-            <label for="book-tit" class="form-label">Titolo</label>
-            <input type="text" class="form-control" id="book-tit" placeholder="Inserisci il titolo del libro">
-            <div class="form-text">
-                Titolo versione italiana
-        </div>
-        
+
+
 
         <!-- CORPO DELLA PAGINA -->
           
