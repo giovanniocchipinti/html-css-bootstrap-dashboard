@@ -13,127 +13,147 @@
 </head>
 <body>
 
-    <header class= "bg-dark">
+        <!-- INTESTAZIONE DELLA PAGINA-->
+
+
+    <header class= "bg-dark mb-4">
+
         <nav class="navbar navbar-expand-lg navbar-dark">
+
             <div class="container-fluid">
+
                 <a class="navbar-brand" href="#">
+
                     <img src="img/duck.png" alt="Duck Logo" width="65px">
+
                 </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+
                     <span class="navbar-toggler-icon"></span>
+                    
                 </button>
                 
                 <!-- Dsektop mode -->
                 <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+
                     <div class="navbar-nav">
+
                         <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
                         <a class="nav-link disabled" aria-disabled="true">Anagrfica utenti</a>
                         <a class="nav-link disabled" aria-disabled="true">Storico prezzi</a>
                         <a class="nav-link disabled" aria-disabled="true">Help</a>
+
                     </div>
+
                 </div>
+
             </div>     
           
         </nav>
                 <!-- Dsektop mode -->
     </header>
 
+        <!-- INTESTAZIONE DELLA PAGINA-->
+
+
     <main>
 
-        <!-- INTESTAZIONE DELLA PAGINA -->
-
-        <div class="container-lg d-flex p-3">
-            <h1 class="display-6 fs-2 m-0">Nuovo Libro</h1>
-        </div>
-
-        <!-- INTESTAZIONE DELLA PAGINA -->
 
         <!-- CORPO DELLA PAGINA -->
 
         <div class="container">
 
+            <h1 class="display-6 fs-2 fw-medium mb-4 ">Nuovo Libro</h1>
+
             <form  class="row">
 
                 <div class="mb-3 gap-1 d-flex">
+
                     <div class="w-50">
+
                         <label for="author-name" class="form-label">Nome Autore</label>
                         <input type="text" class="form-control" id="author-name" placeholder="Inserisci il nome dell'autore">
+
                     </div>
+
                     <div class="w-50">
+
                         <label for="authore-surname" class="form-label">Cognome Autore</label>
                         <input type="text" class="form-control" id="authore-surname" placeholder="Inserisci il cognome dell'autore">
+
                     </div>
                 </div>
                     
                 <div>
+                    
                     <label for="book-tit" class="form-label">Titolo</label>
                     <input type="text" class="form-control" id="book-tit" placeholder="Inserisci il titolo del libro">                        <div class="form-text pb-3">Titolo versione italiana
+               
                 </div>
 
-                <div class="d-flex flex-wrap ">
+                <div class="row g-3 mb-5">
 
-                    <div class="mb-3 col-12 col-md-4">
+                    <div class="col-md-4">
 
-                        <label for="categories" class="form-label">Genere</label>
-                        <select class="form-select" id="categories">
-                            <option selected="gender">Scegli il genere</option>
-                            <option value="adv">Avventura</option>                           
-                            <option value="fum">Fumetti</option>
-                            <option value="fs">Fantascienza</option>
+                        <label for="book-gen" class="form-label">Genere</label>
+                        <select id="book-gen" class="form-select">
+                            <option>Avventura</option>
+                            <option>Fantascienza</option>
+                            <option>Romanzo</option>
+
                         </select>
-
                     </div>
 
-                    <div class="mb-3 col-12 col-md-4 " >
+                    <div class="col-md-4">
+
                         <label for="launch-year" class="form-label">Anno di pubblicazione</label>
-                        <input type="number" class="form-control" id="launch-year" placeholder="Inscerisci l'anno">
-                    </div>
+                        <input type="text" class="form-control" id="launch-year" placeholder="Inserisci l'anno">
 
-                    <div class="mb-3 col-12 col-md-4 ">
-                        <label for="isbn-code" class="form-label">ISBN#</label>
-                        <input type="number" class="form-control" id="isbn-code" placeholder="Inserisci il codice ISBN#">
                     </div>
                     
+                    <div class="col-md-4">
+
+                        <label for="isbn-code" class="form-label">ISBN#</label>
+                        <input type="text" class="form-control" id="isbn-code" placeholder="Inserisci il codice ISBN#">
+
+                    </div>
+
+                </div>
+
+                <hr class="mb-4">
+                
+                <div class="col-12 mb-4">
+
+                    <label for="notes" class="form-label">Note</label>
+                    <textarea class="form-control" id="notes" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
                 </div>
 
 
-                <hr>
+                <div class="form-check mb-3">
 
-                    
+                    <input class="form-check-input" type="checkbox" value="" id="gid-av">
+                    <label class="form-check-label" for="dig-av">Disponibile anche in digitale</label>
 
-                
+                </div>
+
+                <div>
+
+                    <input class="btn btn-primary  p-2 " type="button" value="Aggiungi Libro">
+
+                </div>
 
             </form>
-
-       
 
         </div>
 
 
 
-
-        <!-- CORPO DELLA PAGINA -->
-          
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-
-
-
-
-
-
-
-
     </main>
+
+    <!-- CORPO DELLA PAGINA -->
+          
+
 
 
 
